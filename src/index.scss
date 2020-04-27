@@ -198,5 +198,47 @@ section {
 
     &.why {
         background-color: rgba(255, 184, 0, 0.07);
+        margin: 100px auto;
+
+        h1 {
+            color: #1B89D6;
+            margin: 26px auto;
+        }
+
+        & > div {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            color: #666;
+            position: relative;
+
+            &:before{
+                content: '';
+                position: absolute;
+                height: 260px;
+                width: 273px;
+                left: -70px;
+                top: -50px;
+                background-image: url(./images/Oval.svg);
+                background-size: cover;
+            }
+
+            &:last-child:before {
+                left: auto;
+                top: auto;
+                right: -70px;
+                bottom: -50px;
+            }
+
+            img {
+                position: relative;
+                z-index: 1;
+            }
+
+            div {
+                padding: 30px;
+            }
+        }
+        
     }
 }
