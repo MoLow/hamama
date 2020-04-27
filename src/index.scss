@@ -3,7 +3,7 @@
 }
 
 html, body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Hebrew', sans-serif;
     padding: 0;
     margin: 0;
     direction: rtl;
@@ -13,8 +13,12 @@ html, body {
 input[type="tel"], input[type="email"] {
   border-radius: 8px;
   background-color: #FFFFFF;
+  font-family: 'Open Sans Hebrew', sans-serif;
   border: 0;
-  padding: 7px 30px;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 18px;
+  padding: 12px 20px;
 
   &::placeholder {
     color: #666666;
@@ -22,11 +26,29 @@ input[type="tel"], input[type="email"] {
 }
 
 button {
-    padding: 7px 30px;
+    padding: 12px 65px;
     height: 64px;
     border-radius: 50px;
     border: 0;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    color: #16254F;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 33px;
     background-color: #00E7FF;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0;
 }
 
 .header {
@@ -34,36 +56,82 @@ button {
     width: 100%;
     background-color: #EEEEEE;
     display: flex;
-    align-items: center;
     justify-content: center;
-    
-    .logo {
-        color: #1B89D6;
-        font-size: 38px;
-        font-weight: bold;
-        letter-spacing: 0;
-        line-height: 52px;
-        text-align: right;
-        position: relative;
-        span{
-            font-size: 19.27px;
-            line-height: 27px;
-        }
-    }
+    align-items: center;
+    position: relative;
+    padding-right: 115px;
 
     .slogen {
         flex: 1;
+        color: #666666;
+
+        h1, h3 {
+            max-width: 700px;
+            font-size: 46px;
+            letter-spacing: 0;
+            line-height: 55px;
+        }
+
+        h3 {
+            max-width: 420px;
+            font-size: 25px;
+            line-height: 34px;
+        }
+    
+        .logo {
+            color: #1B89D6;
+            font-size: 38px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 52px;
+            text-align: right;
+            position: absolute;
+            right: 115px;
+            top: 20px;
+            display: flex;
+            flex-direction: column;
+            line-height: 0.9;
+    
+            span{
+                font-size: 19.27px;
+            }
+        }
     }
 
     .form {
         height: 600px;
         width: 544px;
-        background: linear-gradient(222.82deg, #2AC3FF 0%, #042E97 100%);
+        background: linear-gradient(222.82deg, #1d8bd8 0%, #032f96 100%);
         color: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        h1 {
+            margin-bottom: 54px;
+        }
+
+        input[type="tel"], input[type="email"] {
+            width: 352px;
+            margin-bottom: 32px;
+        }
+
+        button {
+            margin-top: 70px;
+        }
+
+        label {
+            display: flex;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 24px;
+            width: 64.5%;
+            align-items: center;
+            input {
+                margin-left: 20px;
+            }
+        }
     }
 }
 
@@ -99,5 +167,9 @@ section {
             align-items: center;
             justify-content: center;
         }
+    }
+
+    &.why {
+        background-color: rgba(255, 184, 0, 0.07);
     }
 }
