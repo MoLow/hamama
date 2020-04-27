@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config webpack.config.js",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.2.0",
     "sass": "^1.26.5",
