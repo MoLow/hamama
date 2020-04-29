@@ -60,7 +60,7 @@ h2 {
     line-height: 50px;
     margin: 10px 0;
     color:#3E53DE
-
+    
 }
 
 .header {
@@ -325,6 +325,82 @@ section {
             }
         }
     }
+    &.testimonials{
+        position: relative;
+        .item{
+            text-align: center;
+            .name{
+                color: #3E53DE;
+                font-weight: bold;
+             
+            }
+            .title{
+                color: #919191;
+            }
+            .quotes{
+                height: 20px;
+                width: 20px;
+                background-image: url(./images/quotes.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 30px 0 20px;
+            }
+            .text{
+                max-width: 70%;
+                font-style: italic;
+                color: #919191;
+                padding-bottom: 40px;
+            }
+            
+        }
+        .images{
+            position: absolute;
+            display: block;
+            bottom: 0;
+            transform: translateY(50%);
+            > span{
+                
+                &:nth-child(2){
+                    > span.image{
+                        background-image:url(./images/gal.jpg);
+                    }
+                }
+                &:nth-child(3){
+                    > span.image{
+                        background-image:url(./images/tamar.jpg);
+                    }
+                }
+                &:nth-child(4){
+                    > span.image{
+                        background-image:url(./images/maor.jpg);
+                    }
+                }
+                
+                display: inline-block;
+                cursor: pointer;
+                > span.image{
+                    background-image:url(./images/yaron.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 10px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    display: block;
+                    
+                }
+                > span.title{
+                    display: block;
+                    text-align: center;
+                    color: #666666;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
     &.qna{
         > div{
             width: 100%;
@@ -343,13 +419,13 @@ section {
             transition: 0.8s all ease;
             &.open{
                 max-height: 300px;
-              
+                
                 .answer{
                     opacity: 1;
                 }
                 .handle{
                     transform: rotate(45deg) translateY(-50%);
-                   
+                    
                 }
             }
             .question{
@@ -367,7 +443,7 @@ section {
                 transform: rotate(0deg) translateY(-50%);
                 background-size: contain;
                 transition: 0.8s ease;
-               
+                
             }
             .answer{
                 opacity: 0;
