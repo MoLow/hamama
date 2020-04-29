@@ -36,7 +36,10 @@ button {
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 33px;
-    background-color: #00E7FF;
+    background-color: #FF763C;
+    color: #fff;
+    box-shadow: 0 22px 41px 0 rgba(0,0,0,0.14);
+    
 }
 
 img {
@@ -67,6 +70,7 @@ h2 {
     align-items: center;
     position: relative;
     padding-right: 115px;
+    background-image: url(./images/kids.jpg);
     
     .slogen {
         flex: 1;
@@ -108,7 +112,7 @@ h2 {
     .form {
         height: 600px;
         width: 544px;
-        background: linear-gradient(222.82deg, #1d8bd8 0%, #032f96 100%);
+        background: #3E53DE;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -163,6 +167,7 @@ section {
     &.odd {
         background-color: #F5F5F5;
     }
+    
     
     > div {
         max-width: 1139px;
@@ -318,4 +323,81 @@ section {
             }
         }
     }
+}
+div.footer{
+    background-color: #3E53DE;
+    color: #fff;
+    text-align: right;
+    padding: 30px 0;
+    
+    
+    > div{
+        max-width: 1139px;
+        margin: auto;
+        
+        h2 , span{
+            font-weight: bold;
+            
+        }
+        span{
+            font-size: 16px;
+        }
+        .form{
+            position: relative;
+            input{
+                margin: 15px 0 15px 15px;
+            }
+            label{
+                display: inline-flex;
+                font-size: 10px;
+                letter-spacing: 0;
+                line-height: 10px;
+                align-items: center;
+                input{
+                    margin: 10px;
+                }
+            }
+            button{
+                position: absolute;
+                left: 0;
+            }
+        }
+        .share{
+            div{
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 27px;
+            }
+            span{
+                line-height: 22px;     
+                font-size: 16px;
+                font-weight: normal;
+                
+                
+            }
+            .logos{
+                position: relative;
+                padding-top: 10px;
+                > span{
+                    width: 30px;
+                    height: 30px;
+                    margin: 5px;
+                    cursor: pointer;
+                    background-position: center;
+                    background-size: contain;
+                    background-image: url(./images/whatsapp-icon.png);
+                    display: inline-block;
+                    &:nth-child(2){
+                        background-image: url(./images/fb-logo.png);
+                        
+                    }
+                    &:nth-child(3){
+                        background-image: url(./images/gmail-logo.png);
+                        
+                    }
+                }
+            }
+        }
+    }
+    
 }
