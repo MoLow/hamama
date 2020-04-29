@@ -323,6 +323,56 @@ section {
             }
         }
     }
+    &.qna{
+        > div{
+            width: 100%;
+        }
+        .item{
+            width: 100%;
+            padding: 15px;
+            border-radius: 3px;
+            background-color: #FFFFFF;
+            box-shadow: 0 3px 2px 0 rgba(221,216,216,0.5);
+            max-height: 100px;
+            position: relative;
+            cursor: pointer;
+            max-height: 50px;
+            overflow: hidden;
+            transition: 0.8s all ease;
+            &.open{
+                max-height: 300px;
+              
+                .answer{
+                    opacity: 1;
+                }
+                .handle{
+                    transform: rotate(45deg) translateY(-50%);
+                   
+                }
+            }
+            .question{
+                font-weight: bold;
+                position: relative;
+            }
+            .handle{
+                background-image: url(./images/plus.svg);
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 10px;
+                height: 10px;
+                transform-origin: 50% 0;
+                transform: rotate(0deg) translateY(-50%);
+                background-size: contain;
+                transition: 0.8s ease;
+               
+            }
+            .answer{
+                opacity: 0;
+                transition: 0.4s ease;
+            }
+        }
+    }
 }
 div.footer{
     background-color: #3E53DE;
