@@ -332,7 +332,7 @@ section {
             .name{
                 color: #3E53DE;
                 font-weight: bold;
-             
+                
             }
             .title{
                 color: #919191;
@@ -448,6 +448,143 @@ section {
             .answer{
                 opacity: 0;
                 transition: 0.4s ease;
+            }
+        }
+    }
+    &.who{
+        color: #666666;
+        > span{
+            max-width: 50%;
+            color: #666666;
+            text-align: center;
+            margin: 40px 0 35px;
+        }
+        > div.prinicpals{
+            background-color: rgba(27, 137, 214, 0.1);
+            padding: 5%;
+            text-align: center;
+            border-radius: 8px;
+            .title{
+                font-weight: bold;
+                padding-bottom: 20px;
+            }
+            .container{
+                display: flex;
+                width: 100%;
+            }
+            .principal{
+                display: inline-block;
+                justify-content: space-evenly;
+                padding: 0 5%;
+                i{
+                    background-image: url(./images/check.svg);
+                    background-size: contain;
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    margin: auto;
+                }
+                span{
+                    display: block;
+                    &:nth-child(2){
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                    &:nth-child(3){
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        > div.main-people{
+            flex-direction: row;
+            .card{
+                background-color:#fff;
+                border-radius: 8px;
+                padding: 20px;
+                transform: rotate(-2deg);
+                box-shadow: 0 2px 45px 0 rgba(0,0,0,0.11);
+                justify-content: space-between;
+                max-width: 33%;
+                
+                &:nth-child(2){
+                    transform: rotate(2deg);
+                    .image{
+                        background-image:url(./images/tamar.jpg);
+                        
+                    }
+                }
+                &:nth-child(3){
+                    .image{
+                        background-image:url(./images/nir.jpg);
+                        
+                    }
+                }
+                
+                
+                .image{
+                    background-image:url(./images/yaron.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 10px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .title{
+                    font-weight: bold;
+                    font-size: 18px;
+                    vertical-align: middle;
+                    display: inline-block;
+                    
+                    > span{
+                        display: block;
+                        &:nth-child(2){
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .more-people-title{
+            font-weight: bold;
+            font-size: 18px;
+            padding: 25px 0;
+        }
+        .more-people{
+            flex-direction: row;
+            text-align: center;
+            font-weight: bold;
+            >div{
+                padding: 10px;
+                
+                span{
+                    display: block;
+                    
+                    
+                    &.image{
+                        background-image:url(./images/nir.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                        margin: 0 10px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        
+                        
+                    }
+                    &:nth-child(2){
+                        padding: 10px 0 0;
+                    }
+                    &:nth-child(3){
+                        font-size: 10px;
+                    }
+                }
             }
         }
     }
